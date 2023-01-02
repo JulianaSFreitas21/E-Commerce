@@ -1,13 +1,138 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background{
+  background-color: #f6f9fc;
+  padding: 50px 0;
 }
+
+.container{
+  max-width: 90%;
+  margin: auto;
+}
+
+.d_flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.c_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f_flex{
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+li{
+  list-style: none;
+}
+
+.uppercase{
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+.capitalize{
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+.RText{
+  text-align: right;
+}
+
+img{
+  height: 10px;
+}
+
+input, button{
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.row{
+  width: 50%;
+}
+
+.icon-circle{
+  width: 50px;
+  height: 50px;
+  line-height: 5px;
+  background-color: #f3f5f9;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle img{
+  height: 20px;
+}
+
+.boxShadow{
+  box-shadow: rgb(43, 52, 69) 0 4px 16px;
+}
+
+/* category */
+
+.containerWidth{
+  width: 77%;
+}
+
+.category{
+  width: 23%;
+  box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
+  height: 510px;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.category img{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.category span{
+  margin: 10px 20px;
+  text-transform: capitalize;
+}
+
+.category .box{
+  transition: 0.5s;
+  padding: 0 20px;
+}
+
+.category .box:hover{
+ background-color: #e1f9ff;
+ cursor: pointer;
+}
+
+
+/* category */
