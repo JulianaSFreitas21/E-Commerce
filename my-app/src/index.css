@@ -5,13 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .background{
@@ -25,7 +24,7 @@ body {
 }
 
 .d_flex{
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 }
 
@@ -60,10 +59,6 @@ li{
 
 .RText{
   text-align: right;
-}
-
-img{
-  height: 10px;
 }
 
 input, button{
@@ -136,3 +131,217 @@ input, button{
 
 
 /* category */
+
+.btn-primary{
+  background-color: #e94560;
+  padding: 13px 40px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.top{
+  margin-top: 80px;
+}
+
+.mtop{
+  margin-top: 40px;
+}
+
+/* products */
+
+.heading{
+  align-items: center;
+}
+
+.heading img{
+  margin: 10px;
+  height: 18px;
+}
+
+.product{
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(3, 0, 71/ 9%) 0 1px 13px;
+  margin: 10px;
+}
+
+.product h3{
+  font-weight: 400;
+  font-size: 17px;
+}
+
+span.discount{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e94560;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #fff;
+  margin: 10px;
+}
+
+.product .img{
+  position: relative;
+}
+
+.product .img img{
+  height: auto;
+  width: auto;
+}
+
+.product .product-like img{
+  height: 15px;
+  width: 15px;
+  margin: 10px auto;
+}
+
+.product .rate img{
+  height: 10px;
+  margin: 5px 5px 0;
+}
+
+.product .price{
+  display: flex;
+  justify-content: space-between;
+  color: #e94560;
+}
+
+.product button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  font-size: 20px;
+  border: 1px solid #e9456083;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  transition: 0.5;
+}
+
+.product button:hover{
+  cursor: pointer;
+  background-color: #e94560;
+  border: none;
+}
+
+.product button img{
+  height: 20px;
+  width: 20px;
+}
+
+.product button #plus-white{
+  display: none;
+  transition: 0.5;
+}
+
+.product button:hover #plus-white{
+  display: block;
+}
+
+.product button:hover #plus-pink{
+  display: none;
+}
+
+.product-like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.product-like label{
+  background-color: #0f3460;
+  padding: 1px 10px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.product:hover .product-like{
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* products */
+
+/* control-btn */
+
+.control-btn .next,
+.control-btn .prev{
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  background: #f0f5fa;
+  line-height: 50px;
+  transition: 0.5s;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-btn .next:hover,
+.control-btn .prev:hover{
+  background: #eaf2fc;
+}
+
+.control-btn .next{
+  left: -20px;
+}
+
+.control-btn .prev{
+  right: -20px;
+}
+
+.control-btn .next img,
+.control-btn .prev img{
+  height: 15px;
+}
+
+/* control-btn */
+
+/* heading */
+
+.heading .heading-left i{
+  font-size: 30px;
+}
+
+.heading .heading-left h2{
+  font-size: 25px;
+  margin: 5px;
+}
+
+.heading .heading-right,
+.heading .heading-right i{
+  text-align: right;
+  color: grey;
+}
+
+/* heading */
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}

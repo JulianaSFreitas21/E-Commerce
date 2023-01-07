@@ -2,12 +2,15 @@ import { Link } from 'react-router-dom';
 import search from '../assets/icons/search.svg';
 import bagShopping from '../assets/icons/bag-shopping-solid.svg';
 import User from '../assets/icons/user-solid.svg';
+import { useUser } from '../../hook/user';
 
 export function Search() {
     window.addEventListener('scroll', function () {
-      const search = document.querySelector('.search');
-      search?.classList.toggle('active', this.window.scrollY > 100)
+      const search = document.querySelector('.search') ;
+      if(search !== null) search.classList.toggle('active', this.window.scrollY > 100)
     })
+
+    const {cartItem} = useUser();
     return (
       <>
         <section className="search">
@@ -32,7 +35,7 @@ export function Search() {
                   <div className='icon-circle'>
                     <img src={bagShopping} alt="bag-shopping" />
                   </div>
-                  <span>0</span>
+                  {cartItem.length === 0? '' : <span>{cartItem.length}</span>}
                 </Link>
               </div>
             </div>

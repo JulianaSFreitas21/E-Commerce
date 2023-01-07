@@ -1,15 +1,12 @@
-import enveloper from '../assets/icons/envelope.svg';
-import phone from '../assets/icons/phone.svg';
-
 export function Head() {
     return (
       <>
         <section className="head">
             <div className="container d_flex">
                 <div className="left row">
-                     <img src={phone}/>
+                     <i className='fa fa-phone'></i>
                      <label>+88012 3457 7894</label>
-                     <img src={enveloper}/>
+                     <i className='fa fa-envelope'></i>
                      <label>example@gmail.com</label>
                 </div>
                 <div className="right row RText">

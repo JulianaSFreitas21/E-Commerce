@@ -1,9 +1,7 @@
-import ShirtImg from '../../common/assets/images/shirt-solid.svg'
-
 export function Categories() {
   const data = [
     {
-      cateImg: ShirtImg,
+      cateImg: "./images/category/cat1.png",
       cateName: "Fashion",
     },
     {
