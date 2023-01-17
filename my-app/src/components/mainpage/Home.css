@@ -26,15 +26,6 @@
     color: transparent !important;
 }
 
-/* .homeSlider ul li button::before{
-    font-size: 15px;
-    color: transparent;
-    position: absolute;
-    top: 2px;
-    left: 0;
-    margin: auto;
-} */
-
 .homeSlider .box{
     display: flex;
 }

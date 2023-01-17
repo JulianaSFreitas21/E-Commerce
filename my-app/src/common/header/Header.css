@@ -2,12 +2,12 @@
 
 /* HEAD */
 .head{
-    background-color: #0f3460;
+    background-color: #e94560;
     padding: 10px 0;
     color: #fff;
 }
 
-.head img{
+.head i{
     margin-right: 10px;
 }
 
@@ -22,10 +22,10 @@
 }
 
 .search .logo p{
-    font-size: 24px;
-    font-weight: 600;
-    color: #1da3b4;
-    font-family: 'Concert One', cursive;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: italic;
+    color: #e94560;
 }
 
 .search .width{
@@ -34,34 +34,32 @@
 
 .search-box{
     width: 80%;
-    border: 2px solid rgba(0, 0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;
 }
 
 .search-box .box{
     max-height: 50px;
     padding: 10px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.search-box .box img{
-    height: 13px;
+.search-box .box i{
+    font-size: 20;
+    color: #333;
     text-align: center;
 }
 
 .search-box input{
-    padding-left: 5px;
     width: 100%;
-    max-height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 40px;
+    border: none;
 }
 
 .search-box span{
     width: 20%;
-    max-height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .icon .cart {

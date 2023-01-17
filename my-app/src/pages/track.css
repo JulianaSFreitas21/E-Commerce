@@ -5,7 +5,10 @@
 
 .track h1{
     font-size: 38px;
-    /* color: #e94360; */
+}
+
+.track p{
+    color: #333;
 }
 
 .progress{
@@ -72,4 +75,13 @@
 .texts ul li{
     width: 120px;
     text-align: center;
+}
+
+#no-order{
+    color: #666;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }

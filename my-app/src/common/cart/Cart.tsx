@@ -13,11 +13,12 @@ export function Cart() {
   const totalPrice = cartItem.reduce((price, item) => price + item.qty * item.price, 0);
 
   function Payment(){
-    setTotalCoupon(totalCoupon - totalPrice);
-    setTrackOrder(true);
     if(totalCoupon < totalPrice){
       return setError('You do not have enough balance');
     }
+
+    setTotalCoupon(totalCoupon - totalPrice);
+    setTrackOrder(true);
   }
   
   return (
@@ -74,7 +75,7 @@ export function Cart() {
               <h3>${totalPrice}.00</h3>
             </div>
             <button onClick={() => Payment()}>Pay</button>
-            <span>{error}</span>
+            <span id='error'>{error}</span>
           </div>
         </div>
       </section>

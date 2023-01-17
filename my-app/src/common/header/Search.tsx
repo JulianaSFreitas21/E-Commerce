@@ -13,12 +13,12 @@ export function Search() {
         <section className="search">
           <div className="container c_flex">
             <div className="logo width">
-              <p>JuShopping</p>
+              <p>GoBuy</p>
             </div>
 
             <div className="search-box f_flex">
               <div className='box'>
-              <i className='fa fa-search'></i>
+                <i className='fa fa-search'></i>
               </div>
               <input type="text" placeholder='Search and hit enter' />
               <span>All Category</span>

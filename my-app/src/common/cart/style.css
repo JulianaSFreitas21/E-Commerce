@@ -111,3 +111,9 @@
     background-color: #e94560;
     color: #fff;
 }
+
+.cart-total #error{
+    font-size: 12px;
+    text-align: center;
+    color: #e94560;
+}

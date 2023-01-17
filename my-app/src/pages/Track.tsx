@@ -62,7 +62,9 @@ export function Track() {
                 </div>
               </>
             ) : (
-              <span>No products on the way</span>
+              <div id="no-order">
+                <span>No products on the way</span>
+              </div>
             )}
             
           </div>

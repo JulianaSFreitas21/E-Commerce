@@ -36,6 +36,7 @@ body {
 
 .f_flex{
   display: flex;
+  align-items: center;
 }
 
 .flex-col{
@@ -221,7 +222,8 @@ span.discount{
   align-items: center;
   background: none;
   font-size: 20px;
-  border: 1px solid #e9456083;
+  font-weight: 400;
+  color: #e94560;
   height: 25px;
   width: 25px;
   border-radius: 5px;
@@ -231,25 +233,12 @@ span.discount{
 .product button:hover{
   cursor: pointer;
   background-color: #e94560;
+  color: #fff;
   border: none;
 }
 
-.product button img{
-  height: 20px;
-  width: 20px;
-}
-
-.product button #plus-white{
-  display: none;
-  transition: 0.5;
-}
-
-.product button:hover #plus-white{
-  display: block;
-}
-
-.product button:hover #plus-pink{
-  display: none;
+.fa-star{
+  color: #f8fc0d;
 }
 
 .product-like {
@@ -259,6 +248,7 @@ span.discount{
   opacity: 0;
   margin: 10px;
   transition: 0.5s;
+  text-align: center;
 }
 
 .product-like label{
