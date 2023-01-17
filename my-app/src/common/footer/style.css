@@ -12,18 +12,21 @@ footer h1 {
 }
 
 footer .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0c2a4d;
-    padding: 15px 20px;
+    padding: 5px 15px;
     border-radius: 5px;
 }
 
 footer .img i {
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px;
 }
 
 footer .img span {
-    margin-top: 5px;
+    font-size: 14px;
 }
 
 footer p {
@@ -40,4 +43,8 @@ footer h2 {
 footer li {
     margin-bottom: 10px;
     opacity: 0.5;
+}
+
+footer .box .icon{
+    height: 60px;
 }

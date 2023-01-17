@@ -1,5 +1,4 @@
 import { FlashCard } from "./FlashCard";
-import  bolt  from "../../common/assets/icons/bolt-solid.svg";
 
 export function FlashDeals(){
     return(
@@ -7,7 +6,7 @@ export function FlashDeals(){
             <section className="flash background">
                 <div className="container">
                     <div className="heading f_flex">
-                        <img src={bolt} alt="bolt" />
+                        <i className='fa fa-bolt'></i>
                         <h1>Flash Deals</h1>
                     </div>
                     <FlashCard/>

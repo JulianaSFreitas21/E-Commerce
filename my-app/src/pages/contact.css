@@ -1,0 +1,48 @@
+.contact {
+    margin-top: 2px;
+    height: 70vh;
+}
+
+.contact h1{
+    font-size: 38px;
+    /* color: #e94360; */
+}
+
+.contact .icons-content{
+    padding-top: 50px;
+}
+
+.contact .icons-content i{
+    text-align: center;
+    font-size: 38px;
+    height: 40px;
+    width: 40px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.contact .icons-content i:hover{
+    margin-top: -10px;
+}
+
+.contact .fa-twitter{
+    color: #438be9;
+}
+
+.contact .fa-facebook{
+    color: #316ab6;
+}
+
+.contact .fa-whatsapp{
+    border-radius: 50%;
+    background: #51e943;
+    color: #fff;
+}
+
+.contact .fa-instagram{
+    color: #e94343;
+}
+
+.contact .fa-envelope{
+    color: #e94343;
+}

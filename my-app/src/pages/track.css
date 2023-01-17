@@ -1,0 +1,75 @@
+.track{
+    margin-top: 2px;
+    height: 70vh;
+}
+
+.track h1{
+    font-size: 38px;
+    /* color: #e94360; */
+}
+
+.progress{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height: 5px;
+    width: 150px;
+    background-color: #c4c4c4;
+}
+
+.fa-circle{
+    font-size: 25px;
+    color: #c4c4c4;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.done::before{
+    content: '\2713';
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.line.active{
+    background-color: #2ffc1c;
+}
+
+.circle.active{
+    background-color: #2ffc1c;
+}
+
+.fa-circle.active{
+    color: #2ffc1c;
+}
+
+.texts{
+    margin: auto;
+    width: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texts ul li{
+    width: 120px;
+    text-align: center;
+}

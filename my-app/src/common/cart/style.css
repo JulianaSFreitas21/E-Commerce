@@ -11,7 +11,7 @@
 .cart-items .cart-total{
     width: 30%;
     margin-left: 30px;
-    height: 130px;
+    height: 165px;
 }
 
 .cart-list{
@@ -76,6 +76,10 @@
     background-color: #f6f9fc;
 }
 
+.cart-total{
+    height: 200px;
+}
+
 .cart-total h4{
     font-size: 15px;
     font-weight: 400;
@@ -89,7 +93,6 @@
 
 .cart-total h2{
     font-size: 18px;
-    margin-top: 20px;
     border-bottom: 1px solid rgb( 3 0 71 / 9%);
     padding-bottom: 10px;
     color: #e94560;
@@ -99,4 +102,12 @@
     font-size: 18px;
     height: 130px;
     color: #e94560;
+}
+
+.cart-total button{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    background-color: #e94560;
+    color: #fff;
 }

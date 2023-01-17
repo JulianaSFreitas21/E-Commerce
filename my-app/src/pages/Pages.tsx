@@ -1,23 +1,12 @@
-import { Annocument } from "../components/annocument/Annocument";
-import { Discount } from "../components/discout/Discount";
-import { FlashDeals } from "../components/FlashDeals/FlashDeal";
-import { Home } from "../components/mainpage/Home";
-import { NewArrivals } from "../components/newarrivals/NewArrivals";
-import { Shop } from "../components/shops/Shop";
-import { TopCate } from "../components/top/TopCate";
-import { Wrapper } from "../components/wrapper/Wrapper";
-
 export function Pages() {
     return (
       <>
-        <Home/>
-        <FlashDeals/>
-        <TopCate/>
-        <NewArrivals/>
-        <Discount/>
-        <Shop/>
-        <Annocument/>
-        <Wrapper/>
+        <section className="pages">
+          <div className="container">
+            <h1>Pages</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam cupiditate ea excepturi dignissimos nesciunt cumque neque deleniti, labore a inventore aut libero iusto in vel nostrum. Deserunt, qui delectus!</p>
+          </div>
+        </section>
       </>
     );
 }  

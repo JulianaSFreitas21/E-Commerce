@@ -1,12 +1,24 @@
+import { useState } from "react";
 import { useUser } from "../../hook/user";
 import './style.css'
 
 export function Cart() {
   const {cartItem} = useUser();
+  const {setTrackOrder} = useUser();
   const {addToCard} = useUser();
   const {decreaseQty} = useUser();
+  const [totalCoupon, setTotalCoupon] = useState(1000);
+  const [error, setError] = useState('');
 
-  const totalPrice = cartItem.reduce((price, item) => price + item.qty * item.price, 0)
+  const totalPrice = cartItem.reduce((price, item) => price + item.qty * item.price, 0);
+
+  function Payment(){
+    setTotalCoupon(totalCoupon - totalPrice);
+    setTrackOrder(true);
+    if(totalCoupon < totalPrice){
+      return setError('You do not have enough balance');
+    }
+  }
   
   return (
     <>
@@ -54,9 +66,15 @@ export function Cart() {
           <div className="cart-total product">
             <h2>Card Summary</h2>
             <div className="d_flex">
-            <h4>Total Price: </h4>
-            <h3>${totalPrice}.00</h3>
+              <h4>Total coupon: </h4>
+              <h3>${totalCoupon}.00</h3>
             </div>
+            <div className="d_flex">
+              <h4>Total Price: </h4>
+              <h3>${totalPrice}.00</h3>
+            </div>
+            <button onClick={() => Payment()}>Pay</button>
+            <span>{error}</span>
           </div>
         </div>
       </section>

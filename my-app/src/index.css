@@ -38,6 +38,11 @@ body {
   display: flex;
 }
 
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
 a{
   text-decoration: none;
   color: #000;
@@ -343,5 +348,5 @@ span.discount{
 .grid3{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 30px;
 }

@@ -1,0 +1,45 @@
+.vendor {
+    margin-top: 2px;
+    height: 70vh;
+}
+
+.vendor .category{
+    height: 100%;
+}
+
+.vendor .category .box{
+    padding: 12px;
+    margin-bottom: 10px;
+}
+.vendor .category .box:last-of-type{
+    margin-bottom: 0px;
+}
+
+.settings h1,.security h1, .banks h1,
+.products h1, .profile h1{
+    font-size: 45px;
+} 
+
+.banks label{
+    margin-top: 0;
+}
+
+.settings label,.security label, .banks label,
+.products label, .profile label{
+    margin-top: 15px;
+}
+
+.topDiv button{
+    background-color: #f6f9fc;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.products .content .box{
+    background-color: #f6f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgb(3, 0, 71/ 9%) 0 1px 13px;
+}

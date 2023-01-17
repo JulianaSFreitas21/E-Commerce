@@ -4,6 +4,8 @@ import { Sdata } from "../components/shops/Sdata";
 
 type UserProviderType = {
     cartItem: Array<any>,
+    trackOrder: Boolean,
+    setTrackOrder: (newState: Boolean) => void,
     setCartItem: (newState: Array<any>) => void,
     productItems: Array<any>,
     shopItems: Array<any>,
@@ -17,6 +19,8 @@ interface UserProviderProps{
 
 const initialValue = {
     cartItem: [],
+    trackOrder: false,
+    setTrackOrder:  () => {},
     setCartItem:  () => {},
     productItems: Data.productItems,
     shopItems: Sdata.shopItems,
@@ -29,6 +33,7 @@ export const UserContext = createContext<UserProviderType>(initialValue);
 export function UserProvider({children}: UserProviderProps){
     const productItems = initialValue.productItems;
     const shopItems = initialValue.shopItems;
+    const [trackOrder, setTrackOrder] = useState<any>(initialValue.trackOrder);
     const [cartItem, setCartItem] = useState<any>(initialValue.cartItem);
 
     function addToCard(product: any) {
@@ -57,7 +62,7 @@ export function UserProvider({children}: UserProviderProps){
 
     return (
         <UserContext.Provider
-        value={{cartItem, setCartItem, productItems, addToCard, decreaseQty, shopItems}}
+        value={{cartItem, setCartItem, productItems, addToCard, decreaseQty, shopItems, trackOrder, setTrackOrder}}
         >
             {children}
         </UserContext.Provider>

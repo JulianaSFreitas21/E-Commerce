@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import search from '../assets/icons/search.svg';
-import bagShopping from '../assets/icons/bag-shopping-solid.svg';
-import User from '../assets/icons/user-solid.svg';
 import { useUser } from '../../hook/user';
 
 export function Search() {
@@ -21,19 +18,21 @@ export function Search() {
 
             <div className="search-box f_flex">
               <div className='box'>
-                <img src={search} alt="search" />
+              <i className='fa fa-search'></i>
               </div>
               <input type="text" placeholder='Search and hit enter' />
               <span>All Category</span>
             </div>
             <div className="icon f_flex width">
               <div className="cart">
-                <div className="icon-circle">
-                  <img src={User} alt="circle-user" />
-                </div>
+                <Link to="/user">
+                  <div className="icon-circle">
+                    <i className='fa fa-user'></i>
+                  </div>
+                </Link>
                 <Link to="/cart">
                   <div className='icon-circle'>
-                    <img src={bagShopping} alt="bag-shopping" />
+                    <i className='fa fa-shopping-bag'></i>
                   </div>
                   {cartItem.length === 0? '' : <span>{cartItem.length}</span>}
                 </Link>

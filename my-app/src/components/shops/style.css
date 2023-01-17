@@ -6,11 +6,18 @@
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+.chead h1:nth-child(1) {
+    color: #444;
+    padding-right: 30px;
+}
+
 .chead h1:nth-child(2) {
     opacity: 0.5;
     border-left: 3px solid rgba(0, 0, 0, 0.5);
-    padding-left: 70px;
-  }
+    padding-left: 30px;
+}
+
 .shop .category .box {
     background-color: #f6f9fc;
     margin: 15px 0;
@@ -29,11 +36,11 @@
 }
 
 .shop .box2 {
-    margin-top: 100px !important;
     text-align: center;
 }
 
 .shop .category button {
+    color: #444;
     padding: 10px;
     background: none;
     text-align: center;

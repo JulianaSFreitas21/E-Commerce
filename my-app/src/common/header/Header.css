@@ -99,9 +99,16 @@
     margin-top: 5px;
 }
 
-.categories img{
-    height: 25px;
-    margin-right: 15px;
+.categories span{
+    font-size: 25px;
+    color: #333;
+    margin-right: 12px;
+}
+
+.categories i{
+    font-size: 15px;
+    color: #333;
+    margin-left: 80px;
 }
 
 .categories_icon{
