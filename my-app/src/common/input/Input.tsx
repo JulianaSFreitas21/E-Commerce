@@ -2,7 +2,7 @@ import './style.css'
 
 interface InputProps{
     id?: string,
-    plasceholder: string,
+    plasceholder?: string,
     type: string,
     value: string | undefined,
     name: string,

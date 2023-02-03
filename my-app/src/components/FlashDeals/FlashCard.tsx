@@ -11,7 +11,7 @@ function NextArrow(props: any){
     return(
         <div className="control-btn" onClick={onClick}>
             <button className='next'>
-            <i className='fa fa-long-arrow-alt-right'></i>
+            <i className='fa fa-long-arrow-alt-left'></i>
             </button>
         </div>
     )
@@ -22,19 +22,13 @@ function PrevArrow(props: any){
     return(
         <div className="control-btn" onClick={onClick}>
             <button className='prev'>
-            <i className='fa fa-long-arrow-alt-left'></i>
+            <i className='fa fa-long-arrow-alt-right'></i>
             </button>
         </div>
     )
 }
 
 export function FlashCard(){
-    const [count, setCount] = useState(0);
-
-    function increment(){
-        setCount(count + 1);
-    }
-
     const {productItems} = useUser();
     const {addToCard} = useUser();
 
@@ -53,6 +47,11 @@ export function FlashCard(){
             <Slider {...settings}>
             {
                 productItems.map((productItem) => {
+                    const [count, setCount] = useState(0);
+
+                    function increment(){
+                        setCount(count + 1);
+                    }
                     return(
                         <div className="box" key={productItem.id}>
                             <div className="product mtop">
