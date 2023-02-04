@@ -7,7 +7,6 @@ export function Annocument(){
         width: "68%",
         height: "340px",
     }
-    const test = false;
     return (
         <>
           <section className='annocument background'>

@@ -10,7 +10,7 @@ export function Cart(){
                             <>
                                 <div className="box" key={index}>
                                     <div className="img">
-                                        <img src={value.cover} alt="" />
+                                        <img src={value.cover} alt={value.name} />
                                     </div>
                                     <h4>{value.name}</h4>
                                     <span>${value.price}.00</span>

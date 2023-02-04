@@ -41,47 +41,52 @@ export function FlashCard(){
         nextArrow : <NextArrow/>,
         prevArrow : <PrevArrow/>
     };
+
+    function Products({productItem}: any) {
+        const [count, setCount] = useState(0);
+    
+        function increment(){
+            setCount(count + 1);
+        }
+        return(
+            <div className="box" key={productItem.id}>
+                <div className="product mtop">
+                    <div className="img">
+                        <span className="discount">{productItem.discount}% Off</span>
+                        <img src={productItem.cover} alt=''/>
+                        <div className="product-like">
+                            <label>{count}</label> <br />
+                            <i className='fa-regular fa-heart' onClick={increment}></i>
+                        </div>
+                    </div>
+                    <div className="product-details">
+                        <h3>{productItem.name}</h3>
+                        <div className="rate f_flex">
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                            <i className='fa fa-star'></i>
+                        </div>
+                        <div className="price">
+                            <h4>${productItem.price}.00</h4>
+                            <button onClick={() => addToCard(productItem)}>
+                                <i className='fa fa-plus'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
     
     return(
         <>
             <Slider {...settings}>
             {
-                productItems.map((productItem) => {
-                    const [count, setCount] = useState(0);
-
-                    function increment(){
-                        setCount(count + 1);
-                    }
-                    return(
-                        <div className="box" key={productItem.id}>
-                            <div className="product mtop">
-                                <div className="img">
-                                    <span className="discount">{productItem.discount}% Off</span>
-                                    <img src={productItem.cover} alt=''/>
-                                    <div className="product-like">
-                                        <label>{count}</label> <br />
-                                        <i className='fa-regular fa-heart' onClick={increment}></i>
-                                    </div>
-                                </div>
-                                <div className="product-details">
-                                    <h3>{productItem.name}</h3>
-                                    <div className="rate f_flex">
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                    </div>
-                                    <div className="price">
-                                        <h4>${productItem.price}.00</h4>
-                                        <button onClick={() => addToCard(productItem)}>
-                                            <i className='fa fa-plus'></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )})
+                productItems.map((productItem, index) => {
+                        return <Products productItem={productItem} key={index} /> 
+                    })
                 }
             </Slider>
         </>

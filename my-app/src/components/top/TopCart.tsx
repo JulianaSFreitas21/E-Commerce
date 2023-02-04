@@ -12,7 +12,7 @@ export function TopCart(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true
-      };
+    };
     return(
         <>
             <Slider {...settings}>

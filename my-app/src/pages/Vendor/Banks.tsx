@@ -112,9 +112,9 @@ export function Banks(){
                 <label>Account Type</label>
                 <Select name="BankName" id="BankName" options={bankName}/>
                 <label>Agency</label>
-                <Input name="Agency" type="text" plasceholder="Ex.: Windows" value=""/>
+                <Input name="Agency" type="text" plasceholder="XXX" value=""/>
                 <label>Account Number</label>
-                <Input name="AccountNumber" type="tel" plasceholder="Ex.: +55DDXXXXXXXXX" value=""/>
+                <Input name="AccountNumber" type="number" plasceholder="XXXXXXXXX" value=""/>
             </div>
         </div>
     )
